@@ -8,8 +8,8 @@ export const profile = {
     en: "Full-Stack Developer",
   } as Localized<string>,
   location: {
-    es: "Ciudad de México, MX",
-    en: "Mexico City, MX",
+    es: "Guadalajara, Jalisco",
+    en: "Guadalajara, Jalisco, MX",
   } as Localized<string>,
   email: "erick_navarro@live.com.mx",
   github: "https://github.com/ericknavarro97",
@@ -93,13 +93,13 @@ export const about = {
   } as Localized<string[]>,
   facts: {
     es: [
-      { k: "Base", v: "CDMX, México" },
+      { k: "Base", v: "Guadalajara, Jalisco" },
       { k: "Rol", v: "Full-Stack Developer" },
       { k: "Foco", v: "Fintech · Identity · Education" },
       { k: "Idiomas", v: "Español · English" },
     ],
     en: [
-      { k: "Based", v: "Mexico City, MX" },
+      { k: "Based", v: "Guadalajara, Jalisco, MX" },
       { k: "Role", v: "Full-Stack Developer" },
       { k: "Focus", v: "Fintech · Identity · Education" },
       { k: "Languages", v: "Spanish · English" },

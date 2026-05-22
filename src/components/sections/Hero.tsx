@@ -154,7 +154,7 @@ function CodeCard({ lang }: { lang: "es" | "en" }) {
             {"\n  "}
             <span className="text-foreground">location</span>
             <span className="text-muted-foreground">: </span>
-            <span className="text-green-500/90">"CDMX 🇲🇽"</span>
+            <span className="text-green-500/90">"GDL, Jalisco 🇲🇽"</span>
             <span className="text-muted-foreground">,</span>
             {"\n"}
             <span className="text-foreground">{"}"}</span>
