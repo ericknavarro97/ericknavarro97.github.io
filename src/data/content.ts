@@ -81,12 +81,12 @@ export const about = {
   eyebrow: { es: "// quién soy", en: "// who I am" } as Localized<string>,
   paragraphs: {
     es: [
-      "Soy desarrollador full-stack con base en México. Llevo más de cinco años construyendo software para fintech, educación y healthtech — desde plataformas de verificación de identidad y scoring crediticio hasta apps móviles educativas y microservicios de audio.",
+      "Soy desarrollador full-stack con base en Guadalajara, Jalisco. Llevo más de cinco años construyendo software para fintech, educación y healthtech — desde plataformas de verificación de identidad y scoring crediticio hasta apps móviles educativas y microservicios de audio.",
       "Mi día a día oscila entre React 19 con Tailwind v4 y shadcn/ui en el frontend, y Django + FastAPI en el backend. Me apasiona el detalle: el tipado correcto, los límites del sistema, las animaciones que se sienten bien.",
       "Cuando no estoy programando, estoy leyendo sobre arquitectura distribuida, optimización de bundles, o jugando con LLMs y agentes.",
     ],
     en: [
-      "I'm a full-stack developer based in Mexico. For 5+ years I've been building software for fintech, education and healthtech — from identity-verification and credit-scoring platforms to educational mobile apps and audio microservices.",
+      "I'm a full-stack developer based in Guadalajara, Jalisco. For 5+ years I've been building software for fintech, education and healthtech — from identity-verification and credit-scoring platforms to educational mobile apps and audio microservices.",
       "Day to day I move between React 19 with Tailwind v4 and shadcn/ui on the frontend, and Django + FastAPI on the backend. I care about the details: correct typing, system boundaries, and animations that feel right.",
       "When I'm not coding I'm reading about distributed architecture, bundle optimization, or playing with LLMs and agents.",
     ],
