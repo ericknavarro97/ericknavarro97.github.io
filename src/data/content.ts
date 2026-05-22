@@ -11,7 +11,7 @@ export const profile = {
     es: "Ciudad de México, MX",
     en: "Mexico City, MX",
   } as Localized<string>,
-  email: "erick.navarro@multiburo.com.mx",
+  email: "erick_navarro@live.com.mx",
   github: "https://github.com/ericknavarro97",
   linkedin: "https://www.linkedin.com/in/ericknavarro97",
 };
