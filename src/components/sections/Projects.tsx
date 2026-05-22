@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { ArrowUpRight, Github, Lock } from "lucide-react";
+import { ArrowUpRight, ExternalLink, Lock } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { projects, type ProjectCategory } from "@/data/projects";
 import { projectsSection } from "@/data/content";
@@ -69,10 +69,10 @@ export function Projects() {
         {filtered.map((p, i) => {
           const name = p.name[lang];
           const desc = p.description[lang];
-          const isLink = !!p.href;
+          const isLink = !!p.liveUrl;
           const Tag: any = isLink ? "a" : "div";
           const tagProps = isLink
-            ? { href: p.href, target: "_blank", rel: "noreferrer" }
+            ? { href: p.liveUrl, target: "_blank", rel: "noreferrer" }
             : {};
           return (
             <Tag
@@ -120,10 +120,12 @@ export function Projects() {
               </ul>
 
               <div className="mt-5 flex items-center justify-between border-t border-dashed border-border pt-4">
-                {p.isOpenSource ? (
+                {p.liveUrl ? (
                   <span className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider text-muted-foreground group-hover:text-accent">
-                    <Github className="h-3.5 w-3.5" />
-                    {projectsSection.open[lang]}
+                    <ExternalLink className="h-3.5 w-3.5" />
+                    <span className="text-muted-foreground/80 group-hover:text-accent/90">
+                      {stripUrl(p.liveUrl)}
+                    </span>
                   </span>
                 ) : (
                   <span className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
@@ -156,6 +158,14 @@ export function Projects() {
       )}
     </section>
   );
+}
+
+function stripUrl(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
 }
 
 function FilterChip({

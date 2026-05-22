@@ -14,8 +14,8 @@ export type Project = {
   description: Localized<string>;
   tech: string[];
   category: ProjectCategory;
-  isOpenSource: boolean;
-  href?: string;
+  /** Public-facing product URL (may require login). */
+  liveUrl?: string;
   year: string;
   highlight: boolean;
 };
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     },
     tech: ["React 19", "TypeScript", "Vite 7", "Redux Toolkit", "React Query", "Ant Design"],
     category: "fintech",
-    isOpenSource: false,
+    liveUrl: "https://dashboard.multiburo.com.mx/",
     year: "2024–2026",
     highlight: true,
   },
@@ -49,7 +49,6 @@ export const projects: Project[] = [
     },
     tech: ["Django 5", "DRF", "PostgreSQL", "Celery", "Redis", "Sentry"],
     category: "fintech",
-    isOpenSource: false,
     year: "2023–2026",
     highlight: true,
   },
@@ -65,7 +64,6 @@ export const projects: Project[] = [
     },
     tech: ["React 19", "TypeScript", "Vite", "Redux Toolkit", "ONNX Runtime", "PDF.js"],
     category: "fintech",
-    isOpenSource: false,
     year: "2024–2026",
     highlight: true,
   },
@@ -81,7 +79,7 @@ export const projects: Project[] = [
     },
     tech: ["Expo 55", "React Native", "TypeScript", "React Query", "Zustand", "NativeWind"],
     category: "education",
-    isOpenSource: false,
+    liveUrl: "https://platform.neticaweb.com/",
     year: "2025–2026",
     highlight: true,
   },
@@ -97,7 +95,6 @@ export const projects: Project[] = [
     },
     tech: ["Bun", "Elysia", "TypeScript", "Drizzle ORM", "PostgreSQL", "AWS S3"],
     category: "healthcare",
-    isOpenSource: false,
     year: "2025",
     highlight: true,
   },
@@ -113,7 +110,6 @@ export const projects: Project[] = [
     },
     tech: ["React 19", "TypeScript", "TipTap", "dnd-kit", "Zustand", "Vite"],
     category: "tools",
-    isOpenSource: false,
     year: "2026",
     highlight: true,
   },
@@ -129,10 +125,9 @@ export const projects: Project[] = [
     },
     tech: ["Next.js 16", "React 19", "Tailwind CSS 4", "next-intl", "TypeScript"],
     category: "healthcare",
-    isOpenSource: true,
-    href: "https://github.com/ericknavarro97/web-page-dr-lino",
+    liveUrl: "https://drlinogarcia.com",
     year: "2026",
-    highlight: false,
+    highlight: true,
   },
   {
     slug: "document-verification-api",
@@ -146,7 +141,6 @@ export const projects: Project[] = [
     },
     tech: ["FastAPI", "Python 3.13", "SQLAlchemy", "Alembic", "Pydantic", "PostgreSQL"],
     category: "fintech",
-    isOpenSource: false,
     year: "2025–2026",
     highlight: false,
   },
@@ -162,7 +156,6 @@ export const projects: Project[] = [
     },
     tech: ["Astro 5", "React 19", "Tailwind CSS 4", "Paraglide i18n", "CosmicJS"],
     category: "tools",
-    isOpenSource: false,
     year: "2026",
     highlight: false,
   },
@@ -178,7 +171,6 @@ export const projects: Project[] = [
     },
     tech: ["Django 5", "DRF", "Celery", "React 18", "TypeScript", "Stripe"],
     category: "ecommerce",
-    isOpenSource: false,
     year: "2024–2025",
     highlight: false,
   },

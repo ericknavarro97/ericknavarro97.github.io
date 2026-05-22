@@ -216,7 +216,6 @@ export const projectsSection = {
   filterAll: { es: "Todos", en: "All" } as Localized<string>,
   showMore: { es: "Ver todos los proyectos", en: "See all projects" } as Localized<string>,
   showLess: { es: "Ver menos", en: "Show less" } as Localized<string>,
-  open: { es: "Abrir repo", en: "Open repo" } as Localized<string>,
   private: { es: "Producto en producción", en: "Live product" } as Localized<string>,
   categoryLabels: {
     es: {
