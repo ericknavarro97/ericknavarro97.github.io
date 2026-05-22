@@ -90,7 +90,7 @@ export const projects: Project[] = [
       en: "Lightmind Audio Microservice",
     },
     description: {
-      es: "Microservicio de audio para una app de meditación con streaming, almacenamiento en S3/CloudFront y metadata asistida por IA.",
+      es: "Microservicio de audio para una app de meditación con streaming, almacenamiento en S3/CloudFront y metadatos asistidos por IA.",
       en: "Audio microservice powering a meditation app with S3/CloudFront streaming and AI-assisted metadata.",
     },
     tech: ["Bun", "Elysia", "TypeScript", "Drizzle ORM", "PostgreSQL", "AWS S3"],

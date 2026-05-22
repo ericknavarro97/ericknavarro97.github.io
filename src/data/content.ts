@@ -146,7 +146,7 @@ export const stack = {
         ],
       },
       {
-        name: "Datos & Infra",
+        name: "Datos e Infra",
         items: [
           "PostgreSQL",
           "Redis",
@@ -259,7 +259,7 @@ export const experience = {
         bullets: [
           "Construyo la app móvil educativa con Expo, React Native y NativeWind.",
           "Mantengo la web principal con React + Vite y un tema dark/light personalizado.",
-          "Implementé motores de renderizado HTML con escalado responsivo y previews.",
+          "Implementé motores de renderizado HTML con escalado adaptable y vistas previas.",
         ],
       },
       {
