@@ -130,6 +130,22 @@ export const projects: Project[] = [
     highlight: true,
   },
   {
+    slug: "cde-endoscopia",
+    name: {
+      es: "Sitio Web CDE — Endoscopía",
+      en: "CDE — Endoscopy Clinic Website",
+    },
+    description: {
+      es: "Sitio institucional para un centro de diagnóstico endoscópico en CDMX: servicios, preparación de estudios, sedes y agenda de citas.",
+      en: "Institutional site for a Mexico City endoscopic diagnostic center: services, procedure prep, branches, and appointment booking.",
+    },
+    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS v4", "shadcn/ui", "Vercel"],
+    category: "healthcare",
+    liveUrl: "https://endoscopiacde.com/",
+    year: "2026",
+    highlight: true,
+  },
+  {
     slug: "document-verification-api",
     name: {
       es: "API de Verificación Documental",
