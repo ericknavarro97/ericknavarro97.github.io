@@ -8,12 +8,12 @@ export const profile = {
     en: "Full-Stack Developer",
   } as Localized<string>,
   location: {
-    es: "Guadalajara, Jalisco",
-    en: "Guadalajara, Jalisco, MX",
+    es: "Zapopan, Jalisco",
+    en: "Zapopan, Jalisco, MX",
   } as Localized<string>,
   email: "erick_navarro@live.com.mx",
   github: "https://github.com/ericknavarro97",
-  linkedin: "https://www.linkedin.com/in/ericknavarro97",
+  linkedin: "https://www.linkedin.com/in/erick-navarro",
 };
 
 export const nav: Localized<{ label: string; href: string }[]> = {
@@ -62,7 +62,7 @@ export const hero = {
   } as Localized<string>,
   stats: [
     {
-      value: "5+",
+      value: "6+",
       label: { es: "años construyendo", en: "years shipping" } as Localized<string>,
     },
     {
@@ -81,28 +81,28 @@ export const about = {
   eyebrow: { es: "// quién soy", en: "// who I am" } as Localized<string>,
   paragraphs: {
     es: [
-      "Soy desarrollador full-stack con base en Guadalajara, Jalisco. Llevo más de cinco años construyendo software para fintech, educación y healthtech — desde plataformas de verificación de identidad y scoring crediticio hasta apps móviles educativas y microservicios de audio.",
-      "Mi día a día oscila entre React 19 con Tailwind v4 y shadcn/ui en el frontend, y Django + FastAPI en el backend. Me apasiona el detalle: el tipado correcto, los límites del sistema, las animaciones que se sienten bien.",
+      "Soy desarrollador full-stack con base en Zapopan, Jalisco. Ingeniero en Comunicaciones y Electrónica de formación, llevo más de seis años construyendo software para fintech, educación y healthtech — desde plataformas de verificación de identidad y scoring crediticio hasta apps móviles educativas y microservicios de audio.",
+      "Mi día a día oscila entre React 19 con Tailwind v4 y shadcn/ui en el frontend, y Django + FastAPI + Node en el backend, liderando equipos que llevan proyectos de la idea al despliegue en AWS y GCP. También manejo Java, Kotlin, C# y C++ cuando el proyecto lo pide.",
       "Cuando no estoy programando, estoy leyendo sobre arquitectura distribuida, optimización de bundles, o jugando con LLMs y agentes.",
     ],
     en: [
-      "I'm a full-stack developer based in Guadalajara, Jalisco. For 5+ years I've been building software for fintech, education and healthtech — from identity-verification and credit-scoring platforms to educational mobile apps and audio microservices.",
-      "Day to day I move between React 19 with Tailwind v4 and shadcn/ui on the frontend, and Django + FastAPI on the backend. I care about the details: correct typing, system boundaries, and animations that feel right.",
+      "I'm a full-stack developer based in Zapopan, Jalisco. Trained as a Communication & Electronic Engineer, I've spent 6+ years building software for fintech, education and healthtech — from identity-verification and credit-scoring platforms to educational mobile apps and audio microservices.",
+      "Day to day I move between React 19 with Tailwind v4 and shadcn/ui on the frontend, and Django + FastAPI + Node on the backend, leading teams that ship projects from idea to deploy on AWS and GCP. I also work in Java, Kotlin, C# and C++ when the project calls for it.",
       "When I'm not coding I'm reading about distributed architecture, bundle optimization, or playing with LLMs and agents.",
     ],
   } as Localized<string[]>,
   facts: {
     es: [
-      { k: "Base", v: "Guadalajara, Jalisco" },
+      { k: "Base", v: "Zapopan, Jalisco" },
       { k: "Rol", v: "Full-Stack Developer" },
       { k: "Foco", v: "Fintech · Identity · Education" },
-      { k: "Idiomas", v: "Español · English" },
+      { k: "Idiomas", v: "Español (nativo) · English (profesional)" },
     ],
     en: [
-      { k: "Based", v: "Guadalajara, Jalisco, MX" },
+      { k: "Based", v: "Zapopan, Jalisco, MX" },
       { k: "Role", v: "Full-Stack Developer" },
       { k: "Focus", v: "Fintech · Identity · Education" },
-      { k: "Languages", v: "Spanish · English" },
+      { k: "Languages", v: "Spanish (native) · English (professional)" },
     ],
   } as Localized<{ k: string; v: string }[]>,
 };
@@ -146,13 +146,21 @@ export const stack = {
         ],
       },
       {
-        name: "Datos e Infra",
+        name: "Datos",
         items: [
           "PostgreSQL",
+          "MySQL",
           "Redis",
+          "DynamoDB",
           "Drizzle ORM",
           "SQLAlchemy",
-          "AWS S3 / CloudFront",
+        ],
+      },
+      {
+        name: "Cloud & DevOps",
+        items: [
+          "AWS (EC2, RDS, S3, Elastic Beanstalk, DynamoDB)",
+          "Google Cloud (Cloud Run, Cloud SQL, Compute Engine, Storage)",
           "Docker",
           "GitHub Actions",
           "Sentry",
@@ -194,13 +202,21 @@ export const stack = {
         ],
       },
       {
-        name: "Data & Infra",
+        name: "Data",
         items: [
           "PostgreSQL",
+          "MySQL",
           "Redis",
+          "DynamoDB",
           "Drizzle ORM",
           "SQLAlchemy",
-          "AWS S3 / CloudFront",
+        ],
+      },
+      {
+        name: "Cloud & DevOps",
+        items: [
+          "AWS (EC2, RDS, S3, Elastic Beanstalk, DynamoDB)",
+          "Google Cloud (Cloud Run, Cloud SQL, Compute Engine, Storage)",
           "Docker",
           "GitHub Actions",
           "Sentry",
@@ -245,21 +261,21 @@ export const experience = {
       {
         company: "Multiburo",
         role: "Full-Stack Developer",
-        period: "2022 — Presente",
+        period: "Mar 2022 — Presente",
         bullets: [
-          "Lidero el frontend de la suite SaaS de gestión inmobiliaria con React 19, Vite y Ant Design.",
-          "Diseño e implemento APIs de verificación de identidad con Django, DRF y FastAPI.",
-          "Refactoricé librerías compartidas de UI y migré stacks legacy a TypeScript estricto.",
+          "Lidero el desarrollo de APIs REST con Python (Django, FastAPI) y Node.js, gestionando un equipo para llevar soluciones de la idea al despliegue.",
+          "Frontend de la suite SaaS de gestión inmobiliaria con React 19, Vite, Redux Toolkit y Ant Design; librerías de UI compartidas migradas a TypeScript estricto.",
+          "Uso intensivo de AWS (Elastic Beanstalk, EC2, RDS, DynamoDB) y Google Cloud (Compute Engine, Cloud SQL, Cloud Run, Storage), con Docker para consistencia entre entornos.",
         ],
       },
       {
         company: "Netica",
         role: "Software Engineer",
-        period: "2024 — Presente",
+        period: "Jul 2021 — Presente",
         bullets: [
-          "Construyo la app móvil educativa con Expo, React Native y NativeWind.",
-          "Mantengo la web principal con React + Vite y un tema dark/light personalizado.",
-          "Implementé motores de renderizado HTML con escalado adaptable y vistas previas.",
+          "Desarrollo y mantengo la plataforma educativa con Python y Django: nuevas funcionalidades, optimización de performance y confiabilidad.",
+          "Despliegue y operación en AWS (Elastic Beanstalk, RDS, S3) con foco en almacenamiento seguro y escalable.",
+          "Construyo la app móvil educativa con Expo, React Native y NativeWind, y motores de renderizado HTML con escalado adaptable y vistas previas.",
         ],
       },
       {
@@ -272,26 +288,44 @@ export const experience = {
           "Editores visuales de contratos con TipTap y dnd-kit.",
         ],
       },
+      {
+        company: "Onnet",
+        role: "Data Science Engineer (part-time)",
+        period: "Jun 2020 — Ago 2021",
+        bullets: [
+          "Procesamiento y gestión de datos con MySQL, PostgreSQL y NoSQL; scripts en Python para automatización de cargas a servidores.",
+          "Aplicación de lógica de negocio sobre bases de datos y archivos con librerías estándar de Python.",
+        ],
+      },
+      {
+        company: "FITECH University",
+        role: "Programming Teacher",
+        period: "Sep 2019 — Jul 2021",
+        bullets: [
+          "Impartí Fundamentos de Programación, Programación Estructurada, Bases de Datos y Programación por Eventos los sábados.",
+          "Lenguajes cubiertos: C++, Python, Java, MySQL y C#.",
+        ],
+      },
     ],
     en: [
       {
         company: "Multiburo",
         role: "Full-Stack Developer",
-        period: "2022 — Present",
+        period: "Mar 2022 — Present",
         bullets: [
-          "Lead the frontend of the property-management SaaS suite with React 19, Vite and Ant Design.",
-          "Design and ship identity-verification APIs with Django, DRF and FastAPI.",
-          "Refactored shared UI libraries and migrated legacy stacks to strict TypeScript.",
+          "Lead REST API development with Python (Django, FastAPI) and Node.js, managing a team that ships solutions from idea to deploy.",
+          "Frontend of the property-management SaaS suite with React 19, Vite, Redux Toolkit and Ant Design; shared UI libraries migrated to strict TypeScript.",
+          "Heavy use of AWS (Elastic Beanstalk, EC2, RDS, DynamoDB) and Google Cloud (Compute Engine, Cloud SQL, Cloud Run, Storage), with Docker for cross-environment consistency.",
         ],
       },
       {
         company: "Netica",
         role: "Software Engineer",
-        period: "2024 — Present",
+        period: "Jul 2021 — Present",
         bullets: [
-          "Build the educational mobile app with Expo, React Native, and NativeWind.",
-          "Maintain the main web with React + Vite and a custom dark/light theme.",
-          "Implemented HTML rendering engines with responsive scaling and previews.",
+          "Build and maintain the educational platform with Python and Django: new features, performance optimization, and reliability.",
+          "Deploy and operate on AWS (Elastic Beanstalk, RDS, S3) with a focus on secure and scalable file storage.",
+          "Build the educational mobile app with Expo, React Native and NativeWind, plus HTML rendering engines with responsive scaling and previews.",
         ],
       },
       {
@@ -302,6 +336,24 @@ export const experience = {
           "Audio microservices for a meditation app (Bun + Elysia + AWS).",
           "Bilingual professional websites with Next.js 16, Tailwind v4 and i18n.",
           "Visual contract editors with TipTap and dnd-kit.",
+        ],
+      },
+      {
+        company: "Onnet",
+        role: "Data Science Engineer (part-time)",
+        period: "Jun 2020 — Aug 2021",
+        bullets: [
+          "Data processing and management with MySQL, PostgreSQL and NoSQL; Python scripts to automate server-side uploads.",
+          "Business logic applied to databases and files using standard Python libraries.",
+        ],
+      },
+      {
+        company: "FITECH University",
+        role: "Programming Teacher",
+        period: "Sep 2019 — Jul 2021",
+        bullets: [
+          "Taught Programming Fundamentals, Structured Programming, Database Fundamentals and Event Programming on Saturdays.",
+          "Languages covered: C++, Python, Java, MySQL and C#.",
         ],
       },
     ],
